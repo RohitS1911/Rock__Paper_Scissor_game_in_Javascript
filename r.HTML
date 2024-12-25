@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <style>
+      .final_project:active{
+        color: red;
+      }
+
+      .final_project{
+        cursor: pointer;
+        color: rgb(85, 26, 139);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Rock Paper Scissors
+    </p>
+    <button onclick="
+    const rockno = Math.random();
+
+    if (rockno >= 0 && rockno < 1 / 3) {
+      alert('You picked rock.Computer picked rock.So it is Tie');
+    } else if (rockno >=1/3 && rockno < 2/3) {
+      alert('You picked rock.Computer picked paper.So you Lose');
+    }  else if (rockno >=2/3 && rockno < 1) {
+      alert('You picked rock.Computer picked scissor.So you Won');
+    }
+    ">Rock
+    </button>
+
+    <button onclick="
+    const paperno = Math.random();
+
+    if (paperno >= 0 && paperno < 1 / 3) {
+      alert('You picked paper.Computer picked rock.So you Won');
+    } else if (paperno >=1/3 && paperno < 2/3) {
+      alert('You picked paper.Computer picked paper.So it is Tie');
+    }  else if (paperno >=2/3 && paperno < 1) {
+      alert('You picked paper.Computer picked scissor.So you Lose');
+    }
+    ">Paper
+    </button>
+
+    <button onclick="
+    const scissorno = Math.random();
+
+    if (scissorno >= 0 && scissorno < 1 / 3) {
+      alert('You picked scissor.Computer picked rock.So you Lose');
+    } else if (scissorno >=1/3 && scissorno < 2/3) {
+      alert('You picked scissor.Computer picked paper.So you Won');
+    }  else if (scissorno >=2/3 && scissorno < 1) {
+      alert('You picked scissor.Computer picked scissor.So it is Tie');
+    }
+    ">Scissors</button>
+
+    
+    <script>
+      
+    </script>
+  </body>
+</html>
+
+
+<P><a href="http://127.0.0.1:5500/rr.html"> Click here</a> to see the final version of the project.</P>

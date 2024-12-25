@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock</title>
+  </head>
+  <body>
+    <button onclick="playerMove='rock'"> Rock </button>
+    <button onclick="playerMove='paper'">Paper</button>
+    <button onclick="playerMove='scissor'">Scissor</button>
+    
+    <script>
+
+      function playGame(playerMove) {
+        const computer=pickComputerMove();
+
+        let result='';
+
+        if (playerMove==='rock') {
+          if (computer==='rock') {
+            result='So it is Tie';
+          } else if (computer==='paper') {
+            result='So you Lose';
+          } else if (computer==='scissor') {
+            result='So you Won';
+          }
+        }
+
+        if (playerMove==='paper') {
+          if (computer==='rock') {
+            result='So it is Tie';
+          } else if (computer==='paper') {
+            result='So you Lose';
+          } else if (computer==='scissor') {
+            result='So you Won';
+          }
+        }
+
+        if (playerMove==='rock') {
+          if (computer==='rock') {
+            result='So it is Tie';
+          } else if (computer==='paper') {
+            result='So you Lose';
+          } else if (computer==='scissor') {
+            result='So you Won';
+          }
+        }
+        alert('You picked ${playerMove}.Computer picked ${computerMove}.${result}')
+      }
+
+      function pickComputerMove() {
+        const random=Math.random();
+        let computer='';
+
+        if (random>=0 && random<1/3) {
+          computer='rock';
+        } else if (random>=1/3 && random<1/2) {
+          computer='paper';
+        } else if (random>=1/2 && random<1) {
+          computer='scissor';
+        }
+        return pickComputerMove;
+      }
+
+    </script>
+  </body>
+</html>
